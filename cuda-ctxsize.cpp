@@ -1,6 +1,7 @@
 // Can be compiled as
 // g++ cuda-ctxsize.cpp -I/usr/local/cuda/include -L/usr/local/cuda/lib64 -lcudart -lnvidia-ml
 // Returns 305Mb for driver 450.119.03 on V100
+// Returns 413Mb for driver 450.119.03 on A100
 #include <nvml.h>
 #include <cuda_runtime.h>
 
