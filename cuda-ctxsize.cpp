@@ -6,6 +6,7 @@
 #include <cuda_runtime.h>
 
 #include <iostream>
+#include <vector>
 #include <unistd.h>
 
 unsigned long long getGPUMemory() {
