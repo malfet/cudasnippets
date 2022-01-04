@@ -28,7 +28,7 @@ unsigned long long getGPUMemory() {
   unsigned int infoCount = 0;
   rc = nvmlDeviceGetComputeRunningProcesses(device, &infoCount, nullptr);
   if (rc == NVML_SUCCESS && infoCount == 0) {
-	  return 0;
+    return 0;
   }
   if (rc != NVML_ERROR_INSUFFICIENT_SIZE) {
     raiseError("nmlDeviceGetComputeRuningProcesses() failed", rc);
@@ -57,6 +57,6 @@ void printGPUMemory(const std::string& msg) {
 }
 
 int main(void) {
-	cudaFree(0);
-	printGPUMemory("Total mem");
+  cudaFree(0);
+  printGPUMemory("Total mem");
 }
